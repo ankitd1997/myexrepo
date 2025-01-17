@@ -1,0 +1,106 @@
+#Kubernates notes
+
+statefulset -> db -> mysql, mongodb   : it is used for databases
+
+
+learn :
+statefulset DIFF deployment
+daemonset DIFF deployment
+# daemonset set DIFF deployment
+daemonset -> web -> nginx, tomcat
+
+
+
+
+deployment -> web -> nginx, tomcat
+
+
+pod -> container -> docker
+
+kubectl get pods
+kubectl get nodes
+kubectl get svc
+kubectl get deployments
+kubectl get services
+kubectl get configmap
+kubectl get secret
+kubectl get persistentvolume
+kubectl get persistentvolumeclaim
+kubectl get storageclass
+kubectl get daemonset
+kubectl get statefulset
+kubectl get job
+kubectl get cronjob
+kubectl get ingress
+kubectl get hpa
+kubectl describe pod <pod-name>
+kubectl describe node <node-name>
+kubectl describe svc <svc-name>
+kubectl describe deployment <deployment-name>
+kubectl describe service <service-name>
+kubectl describe configmap <configmap-name>
+kubectl describe secret <secret-name>
+kubectl describe persistentvolume <persistentvolume-name>
+kubectl describe persistentvolumeclaim <persistentvolumeclaim-name>
+kubectl describe storageclass <storageclass-name>
+kubectl describe daemonset <daemonset-name>
+kubectl describe statefulset <statefulset-name>
+kubectl describe job <job-name>
+kubectl describe cronjob <cronjob-name>
+kubectl describe ingress <ingress-name>
+
+kubectl apply -f <filename>
+kubectl delete -f <filename>
+kubectl delete pod <pod-name>
+kubectl delete node <node-name>
+kubectl delete svc <svc-name>
+kubectl delete deployment <deployment-name>
+kubectl delete service <service-name>
+kubectl delete configmap <configmap-name>
+kubectl delete secret <secret-name>
+kubectl delete persistentvolume <persistentvolume-name>
+kubectl delete persistentvolumeclaim <persistentvolumeclaim-name>
+kubectl delete storageclass <storageclass-name>
+kubectl delete daemonset <daemonset-name>
+kubectl delete statefulset <statefulset-name>
+kubectl delete job <job-name>
+kubectl delete cronjob <cronjob-name>
+kubectl delete ingress <ingress-name>
+
+kubectl logs <pod-name>
+kubectl exec -it <pod-name> -- /bin/bash
+kubectl exec -it <pod-name> -- /bin/sh
+kubectl exec -it <pod-name> -- /bin/ls
+kubectl exec -it <pod-name> -- /bin/cat <filename>
+kubectl exec -it <pod-name> -- /bin/cp <source-file> <destination-file>
+kubectl exec -it <pod-name> -- /bin/mv <source-file> <destination-file>
+kubectl exec -it <pod-name> -- /bin/rm <filename>
+
+kubectl cp <pod-name>:<source-file> <destination-file>
+kubectl cp <source-file> <pod-name>:<destination-file>
+
+
+
+
+interview
+
+max unavailable -> 25%
+max surge -> 25% 
+
+kubectl top nodes
+kubectl top pods
+kubectl top services
+kubectl top deployments
+kubectl top configmap
+kubectl top secret
+kubectl top persistentvolume
+kubectl top persistentvolumeclaim
+kubectl top storageclass
+kubectl top daemonset
+kubectl top statefulset
+kubectl top job
+kubectl top cronjob
+kubectl top ingress
+kubectl top hpa
+
+
